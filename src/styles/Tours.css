@@ -1,0 +1,20 @@
+.tours__title {
+    text-align: center;
+    margin: 15px;
+    color: #242424;
+    font-size: 100px;
+}
+
+.tours__list {
+    min-height: 100vh;
+}
+
+.tours__cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.tours__card {
+    margin: 20px 10px;
+}

@@ -1,0 +1,46 @@
+.main{
+    background: url("../assets/images/indonesia.jpg") center 980px / 100% 50% no-repeat;
+    min-height: 180vh;
+}
+
+.main__video {
+    height: 40vh;
+}
+
+video {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+}
+
+
+.main__title {
+    padding: 10px 0 10px 50px;
+    color: #242424;
+    font-size: 100px;
+}
+
+
+h2.main__title {
+    text-align: right;
+    padding: 0 50px 0 0;
+}
+
+.main__desc-wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 100px;
+}
+
+
+.main__desc-title {
+    font-size: 40px;
+    padding: 15px;
+    text-align: center;
+}
+
+.main__desc-text {
+    padding: 15px;
+    text-align: justify;
+}

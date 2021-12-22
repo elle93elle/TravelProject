@@ -1,0 +1,19 @@
+.myDarkButton {
+    padding: 8px 20px;
+    border-radius: 2px;
+    outline: none;
+    cursor: pointer;
+    background-color: transparent;
+    transition: all 0.3s ease-out;
+    font-weight: 700;
+    font-size: 1.2rem;
+    width: fit-content;
+    color: #242424;
+    border: 1px solid #242424;
+}
+
+.myDarkButton:hover {
+    background: #242424;
+    color: white;
+    transition: all 0.3s ease-out;
+}

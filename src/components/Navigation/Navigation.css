@@ -1,0 +1,32 @@
+header {
+    position: sticky;
+    top:0;
+    z-index: 999;
+    font-size: 25px;
+}
+
+.navigation {
+    padding: 0 100px;
+    background: #242424;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 700;
+}
+
+.navigation__logo {
+    color: white;
+}
+
+.navigation__links {
+    display: flex;
+}
+
+.navigation__links > li {
+    padding: 20px;
+}
+
+.navigation__link {
+    color: white;
+
+}
