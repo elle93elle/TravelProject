@@ -7,6 +7,7 @@ import MyButton from "../../UI/buttons/MyButton";
 const Navigation = () => {
     const {isAuth, setIsAuth} = useContext(AppContext)
     const navigate = useNavigate();
+
     return (
         <header>
             <nav className='navigation'>

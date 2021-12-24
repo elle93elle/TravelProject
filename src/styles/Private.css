@@ -5,3 +5,19 @@
     min-height: 100vh;
 }
 
+.private-info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.private-info__table {
+    border: 1px solid #242424 ;
+}
+
+ td, th {
+    text-align: center;
+     border: 1px solid #242424;
+     padding: 5px;
+}

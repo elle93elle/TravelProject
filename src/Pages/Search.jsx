@@ -16,8 +16,7 @@ const Search = () => {
             const res = tours.filter((item) => item.title.toLowerCase().includes(value.toLowerCase()))
             setSearchTour(res)
         },
-        [value]
-    )
+        [value])
 
     return (
         <div className='search'>
@@ -30,18 +29,15 @@ const Search = () => {
                     textAlign: 'center',
                     width: 'fit-content',
                     border: '1px solid #242424'
-                }}
-            />
+                }}/>
             <div className='search__inner'>
                 {(!searchTour.length) ?
                     <h3 className='search__title'>Sorry, we have no tours to {value} :(</h3> :
-
                     searchTour.map((tour) => {
                         return (
                             <Card key={tour.id} card={tour}/>
                         )
-                    })
-                }
+                    })}
             </div>
         </div>
     );

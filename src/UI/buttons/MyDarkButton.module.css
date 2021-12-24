@@ -17,3 +17,8 @@
     color: white;
     transition: all 0.3s ease-out;
 }
+@media screen and (max-width: 768px) and (min-width: 320px) {
+    .myDarkButton {
+        font-size: .8rem;
+    }
+}

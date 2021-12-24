@@ -18,3 +18,9 @@
     color: #242424;
     transition: all 0.3s ease-out;
 }
+
+@media screen and (max-width: 768px) and (min-width: 320px) {
+    .myBtn {
+        font-size: .8rem;
+    }
+}

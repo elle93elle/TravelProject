@@ -6,9 +6,9 @@ import Main from "./Pages/Main";
 import Private from "./Pages/Private";
 import Tour from "./components/Tour/Tour";
 import {createContext, useEffect, useState} from "react";
-import {cards} from "./database/database";
 import Order from "./components/Order/Order";
 import Search from "./Pages/Search";
+import {getTours} from "./api";
 
 export const AppContext = createContext(null)
 
@@ -18,15 +18,11 @@ function App() {
     const [isAuth, setIsAuth] = useState(false)
 
     useEffect(() => {
-        const response = cards
-        setTours(response)
+        getTours().then((res)=>  setTours(res))
+        if (!localStorage.getItem('orders')) {
+            localStorage.setItem('orders', JSON.stringify([]))
+        }
     }, [])
-
-    if (tours.length === 0) {
-        return (
-            <div>Loading...</div>
-        )
-    }
 
 
     return (
