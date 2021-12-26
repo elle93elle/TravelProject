@@ -1,11 +1,10 @@
 import React, {useContext, useEffect, useState} from 'react';
-// import {users} from "../database/users";
+import {users} from "../database/users";
 import {AppContext} from "../App";
 import MyInput from "../UI/Input/MyInput";
 import FormCard from "../UI/FormCard/FormCard";
 import MyButton from "../UI/buttons/MyButton";
 import '../styles/Private.css'
-import {getUsers} from "../api";
 
 
 const Private = () => {
@@ -13,18 +12,18 @@ const Private = () => {
     const [login, setLogin] = useState('')
     const [password, setPassword] = useState('')
     const [orders, setOrders] = useState([])
+    const [usersList, setUsersList] = useState([])
 
     useEffect(() => {
         const getOrders = JSON.parse(localStorage.getItem('orders'))
         setOrders(getOrders)
-
     }, [])
 
 
     async function submitUser(e) {
         e.preventDefault()
-        const users = await getUsers()
-        const currentUser = users.find((item) => item.login === login)
+        setUsersList(users)
+        const currentUser = usersList.find((item) => item.login === login)
         if (!currentUser) {
             return alert('No such user')
         }

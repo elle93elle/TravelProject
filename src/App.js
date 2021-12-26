@@ -8,7 +8,7 @@ import Tour from "./components/Tour/Tour";
 import {createContext, useEffect, useState} from "react";
 import Order from "./components/Order/Order";
 import Search from "./Pages/Search";
-import {getTours} from "./api";
+import {cards} from "./database/database";
 
 export const AppContext = createContext(null)
 
@@ -18,7 +18,7 @@ function App() {
     const [isAuth, setIsAuth] = useState(false)
 
     useEffect(() => {
-        getTours().then((res)=>  setTours(res))
+        setTours(cards)
         if (!localStorage.getItem('orders')) {
             localStorage.setItem('orders', JSON.stringify([]))
         }
