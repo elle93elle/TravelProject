@@ -12,7 +12,7 @@
 .tours__cards {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 
 .tours__card {
