@@ -16,6 +16,7 @@ header {
 
 .navigation__logo {
     color: white;
+    margin-right: 15px;
 }
 
 .navigation__links {

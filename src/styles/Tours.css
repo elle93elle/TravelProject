@@ -12,9 +12,16 @@
 .tours__cards {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
 .tours__card {
     margin: 20px 10px;
+}
+
+@media screen and (max-width: 768px) and (min-width: 320px) {
+    .tours__title {
+        font-size: 50px;
+    }
+
 }

@@ -45,7 +45,7 @@ const Private = () => {
             <div className='private'>
                 <FormCard>
                     <form onSubmit={submitUser}>
-                        <h1>Enter your login and password</h1>
+                        <h1 style={{textAlign:'center'}}>Enter your login and password</h1>
                         <MyInput
                             required
                             type="text"
